@@ -80,7 +80,7 @@ export default function Home() {
           <div className="relative z-10 max-w-3xl lg:max-w-[46rem] xl:max-w-[49rem]">
             <p className="eyebrow reveal mb-6 text-[#79d5c7]">AI-Powered Digital Marketing Service</p>
             <h1 className="font-display reveal reveal-delay-1 text-[clamp(2.65rem,8vw,4rem)] leading-[.96] tracking-[-.05em] lg:text-[clamp(3.5rem,5.4vw,5.6rem)]">
-              Grow Your Business With <em className="font-normal text-[#79d5c7]">Smarter</em> Digital Marketing
+              Smarter Marketing. <em className="font-normal text-[#79d5c7]">Bigger Growth.</em>
             </h1>
             <p className="reveal reveal-delay-2 mt-8 max-w-2xl text-xl font-bold leading-8 text-white">
               Stop wasting time and money on marketing that doesn’t deliver.
