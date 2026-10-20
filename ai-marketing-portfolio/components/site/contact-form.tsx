@@ -1,4 +1,4 @@
-import { LockKeyhole, Send } from "lucide-react";
+import { Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -9,11 +9,6 @@ const siteUrl = "https://grownep-ai-marketing.bradleyjackson1.chatgpt.site";
 export function ContactForm() {
   return (
     <div>
-      <div className="mb-6 flex gap-3 rounded-xl border border-[#0b7c78]/25 bg-[#eaf6f2] p-4 text-sm text-[#274b4c]">
-        <LockKeyhole className="mt-0.5 h-5 w-5 shrink-0 text-[#0b7c78]" aria-hidden="true" />
-        <p>Your consultation request will be delivered directly to <strong>ranagb275@gmail.com</strong>.</p>
-      </div>
-
       <form action="https://formsubmit.co/ranagb275@gmail.com" method="POST" acceptCharset="UTF-8" className="grid gap-5 sm:grid-cols-2">
         <input type="hidden" name="_subject" value="New GrowNep Free Consultation Request" />
         <input type="hidden" name="_template" value="table" />
