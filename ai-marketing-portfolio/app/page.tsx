@@ -64,14 +64,14 @@ export default function Home() {
           <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0b1f2a] to-transparent" aria-hidden="true" />
         </div>
 
-        <div className="absolute inset-0 -z-20 hidden lg:block">
+        <div className="absolute inset-y-[3%] right-0 -z-20 hidden w-[92%] lg:block">
           <Image
             src="/website-hero.png"
             alt=""
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center"
+            className="object-contain object-right"
           />
         </div>
         <div className="absolute inset-0 -z-10 hidden bg-[linear-gradient(90deg,rgba(7,24,32,.99)_0%,rgba(11,31,42,.96)_34%,rgba(11,31,42,.72)_50%,rgba(11,31,42,.08)_72%,transparent_100%)] lg:block" aria-hidden="true" />
