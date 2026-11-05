@@ -12,6 +12,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const structuredData = { "@context": "https://schema.org", "@type": "ProfessionalService", name: "GrowNep — AI Marketing Expert", url: "https://grownep-ai-marketing.bradleyjackson1.chatgpt.site", description: "AI-powered digital marketing for small and medium businesses that want more qualified leads and a clear, practical growth strategy.", areaServed: "Syangja", telephone: "+9779864683116", email: "ranagb275@gmail.com" };
+  const structuredData = { "@context": "https://schema.org", "@type": "ProfessionalService", name: "GrowNep — AI Marketing Expert", url: "https://grownep-ai-marketing.bradleyjackson1.chatgpt.site", description: "AI-powered digital marketing for small and medium businesses that want more qualified leads and a clear, practical growth strategy.", areaServed: "Across Nepal", telephone: "+9779864683116", email: "digitalgb@grownep.com" };
   return <html lang="en"><body className="antialiased"><a href="#main-content" className="fixed left-3 top-3 z-[100] -translate-y-24 rounded-md bg-white px-4 py-2 font-semibold text-primary transition focus:translate-y-0">Skip to content</a><Header />{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} /></body></html>;
 }
