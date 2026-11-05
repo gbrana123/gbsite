@@ -9,12 +9,12 @@ const siteUrl = "https://grownep.com";
 export function ContactForm() {
   return (
     <div>
-      <form action="https://formsubmit.co/digitalgb@grownep.com" method="POST" acceptCharset="UTF-8" className="grid gap-5 sm:grid-cols-2">
-        <input type="hidden" name="_subject" value="New GrowNep Free Consultation Request" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_next" value={`${siteUrl}/thank-you`} />
-        <input type="hidden" name="_url" value={`${siteUrl}/contact#book-consultation`} />
-        <input type="text" name="_honey" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
+      <form action="https://api.web3forms.com/submit" method="POST" acceptCharset="UTF-8" className="grid gap-5 sm:grid-cols-2">
+        <input type="hidden" name="access_key" value="3a5b7c39-d251-4793-8368-40e563b46af9" />
+        <input type="hidden" name="subject" value="New GrowNep Free Consultation Request" />
+        <input type="hidden" name="from_name" value="GrowNep Website" />
+        <input type="hidden" name="redirect" value={`${siteUrl}/thank-you`} />
+        <input type="checkbox" name="botcheck" tabIndex={-1} className="hidden" aria-hidden="true" />
 
         <div>
           <label htmlFor="name" className="mb-2 block font-semibold">Name</label>
