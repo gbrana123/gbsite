@@ -4,12 +4,12 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 const fieldClass = "min-h-12 rounded-xl bg-white px-4 text-base";
-const siteUrl = "https://grownep-ai-marketing.bradleyjackson1.chatgpt.site";
+const siteUrl = "https://grownep.com";
 
 export function ContactForm() {
   return (
     <div>
-      <form action="https://formsubmit.co/ranagb275@gmail.com" method="POST" acceptCharset="UTF-8" className="grid gap-5 sm:grid-cols-2">
+      <form action="https://formsubmit.co/digitalgb@grownep.com" method="POST" acceptCharset="UTF-8" className="grid gap-5 sm:grid-cols-2">
         <input type="hidden" name="_subject" value="New GrowNep Free Consultation Request" />
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_next" value={`${siteUrl}/thank-you`} />
