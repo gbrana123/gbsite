@@ -3,7 +3,7 @@ import { CheckCircle2 } from "lucide-react";
 import { Footer } from "@/components/site/footer";
 
 export const metadata: Metadata = {
-  title: "Consultation Request Sent",
+  title: "Congratulations — Consultation Request Sent",
   description: "Your GrowNep consultation request has been sent.",
   robots: { index: false, follow: false },
 };
@@ -18,7 +18,7 @@ export default function ThankYouPage() {
               <CheckCircle2 className="h-9 w-9" aria-hidden="true" />
             </span>
             <p className="eyebrow mt-7 text-[#79d5c7]">Request received</p>
-            <h1 className="mt-4 font-display text-5xl leading-tight tracking-tight">Thank you for reaching out.</h1>
+            <h1 className="mt-4 font-display text-5xl leading-tight tracking-tight">Congratulations! Your request is on its way.</h1>
             <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-white/70">Your consultation request has been sent. I’ll review your details and respond by email or mobile as soon as possible.</p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <a href="/" className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#f07c47] px-6 py-3 text-sm font-bold text-primary hover:bg-[#ff9160]">Return to Home</a>
