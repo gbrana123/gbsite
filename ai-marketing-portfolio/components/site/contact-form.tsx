@@ -7,7 +7,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 const fieldClass = "min-h-12 rounded-xl bg-white px-4 text-base";
-const formEndpoint = "https://formsubmit.co/ajax/info@grownep.com";
+const formEndpoint = "https://api.web3forms.com/submit";
+const web3FormsAccessKey = "154f3317-fff6-46b6-b975-89955bfe39b7";
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -20,7 +21,7 @@ export function ContactForm() {
     setError("");
 
     const controller = new AbortController();
-    const timeout = window.setTimeout(() => controller.abort(), 15000);
+    const timeout = window.setTimeout(() => controller.abort(), 12000);
 
     try {
       const response = await fetch(formEndpoint, {
@@ -32,7 +33,7 @@ export function ContactForm() {
       const result = (await response.json().catch(() => null)) as { success?: boolean; message?: string } | null;
 
       if (!response.ok || result?.success === false) {
-        throw new Error(result?.message || "FormSubmit could not process the request.");
+        throw new Error(result?.message || "The form service could not process the request.");
       }
 
       form.reset();
@@ -53,9 +54,10 @@ export function ContactForm() {
   return (
     <div>
       <form onSubmit={handleSubmit} acceptCharset="UTF-8" className="grid gap-5 sm:grid-cols-2">
-        <input type="hidden" name="_subject" value="New GrowNep Free Consultation Request" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="text" name="_honey" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
+        <input type="hidden" name="access_key" value={web3FormsAccessKey} />
+        <input type="hidden" name="subject" value="New GrowNep Free Consultation Request" />
+        <input type="hidden" name="from_name" value="GrowNep Website" />
+        <input type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
 
         <div>
           <label htmlFor="name" className="mb-2 block font-semibold">Name</label>
