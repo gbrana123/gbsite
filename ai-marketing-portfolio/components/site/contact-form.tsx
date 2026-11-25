@@ -42,8 +42,8 @@ export function ContactForm() {
       const timedOut = submissionError instanceof DOMException && submissionError.name === "AbortError";
       setError(
         timedOut
-          ? "The email service is taking too long. Please try again, or contact us on WhatsApp at 9864683116."
-          : "We couldn’t send your request right now. Please try again, or contact us on WhatsApp at 9864683116.",
+          ? "The email service is taking too long. Please try again, or contact us on WhatsApp at +9779806543361."
+          : "We couldn’t send your request right now. Please try again, or contact us on WhatsApp at +9779806543361.",
       );
     } finally {
       window.clearTimeout(timeout);
